@@ -13,3 +13,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 ###############################################################################
+#base=js
+jquery-2.2.4.min.js
+popper.min.js
+bootstrap.min.js
+jquery.ajaxchimp.min.js
+owl.carousel.min.js
+highcharts.js
+jquery.sticky.js
+jquery.magnific-popup.min.js
+main.js
