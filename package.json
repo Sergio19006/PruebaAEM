@@ -1,0 +1,24 @@
+{
+  "name": "pruebaem",
+  "version": "1.0.0",
+  "description": "This is the code companion to a multi-part series on HelpX:",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "aemfed": "^0.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "aemfed": "aemfed -t \"http://admin:admin@localhost:4502\" -w \"ui.apps/src/main/content/jcr_root/\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sergio19006/PruebaAEM.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sergio19006/PruebaAEM/issues"
+  },
+  "homepage": "https://github.com/Sergio19006/PruebaAEM#readme"
+}
