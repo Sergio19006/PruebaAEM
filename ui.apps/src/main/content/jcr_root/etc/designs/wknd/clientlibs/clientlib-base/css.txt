@@ -13,3 +13,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 ###############################################################################
+#base=css
+linearicons.css
+owl.carousel.css
+font-awesome.min.css
+nice-select.css
+magnific-popup.css
+bootstrap.css
+main.css
