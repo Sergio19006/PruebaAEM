@@ -1,9 +1,7 @@
-<section class="home-container" id="banner" data-sly-include="./main/banner.html"></section>
-<section id="service" data-sly-include="./main/service.html"></section>
-<section id="team" data-sly-include="./main/team.html"></section>
-<section id="blog" data-sly-include="./main/blog.html"></section>
-
-
+<section data-sly-resource="${'bannerHome' @ resourceType='wknd/components/content/structure/home/bannerHome'}" data-sly-unwrap="${wcmmode.disabled}"></section>
+<section data-sly-resource="${'service' @ resourceType='wknd/components/content/structure/home/service'}" data-sly-unwrap="${wcmmode.disabled}"></section>
+<section data-sly-resource="${'team' @ resourceType='wknd/components/content/structure/home/team'}" data-sly-unwrap="${wcmmode.disabled}"></section>
+<section data-sly-resource="${'blog' @ resourceType='wknd/components/content/structure/home/blog'}" data-sly-unwrap="${wcmmode.disabled}"></section>
 
 <div data-sly-resource="${ 'home-par' @ resourceType='wcm/foundation/components/parsys'}" data-sly-unwrap="${wcmmode.disabled}"></div>
 
