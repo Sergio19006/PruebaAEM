@@ -21,3 +21,4 @@ nice-select.css
 magnific-popup.css
 bootstrap.css
 main.css
+fonts.google.api.css

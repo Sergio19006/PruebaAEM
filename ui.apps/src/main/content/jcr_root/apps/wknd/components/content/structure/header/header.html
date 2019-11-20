@@ -2,8 +2,8 @@
         <div class="menu-top container">
             <div class="d-flex justify-content-between align-items-center">
                 <ul class="list">
-                    <li><a href="tel:+12312-3-1209">+12312-3-1209</a></li>
-                    <li><a href="support@colorlib.com">support@colorlib.com</a></li>
+                    <li><a href="${properties.tel || 'tel:434343434' }" >${properties.tel || '434343434'}</a></li>
+                    <li><a href="${properties.email || 'mailto:support@colorlib.com'}">support@colorlib.com</a></li>
                 </ul>
                 <ul class="list">
                     <li><a href="#">Free Seo Analysis</a></li>
@@ -24,7 +24,7 @@
                 <ul class="navbar-nav">
                     <li><a href="#home">Adioos</a></li>
                     <li>
-                        <a href="/content/wknd/article/article.html">Article</a>
+                        <a href="${properties.article @extension='html'}">Article</a>
                     </li>
                 </ul>
             </div>
