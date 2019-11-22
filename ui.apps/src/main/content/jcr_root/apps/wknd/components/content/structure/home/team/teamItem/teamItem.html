@@ -1,9 +1,9 @@
 
-<sly data-sly-use.TitleModel="com.adobe.aem.guides.wknd.core.wcm.TitleName"></sly>
+<sly data-sly-use.TeamItem="com.adobe.aem.guides.wknd.core.wcm.TeamItem"></sly>
 
 
 <div class="thumb">
-    <img class="img-fluid" src="${properties.img}" alt="">
+    <img class="img-fluid" src="${TeamItem.img}" alt="">
     <div class="align-items-center justify-content-center d-flex">
         <a href="#"><i class="fa fa-facebook"></i></a>
         <a href="#"><i class="fa fa-twitter"></i></a>
@@ -11,6 +11,6 @@
     </div>
 </div>
     <div class="meta-text mt-30 text-center">
-        <h4>${TitleModel.name || "HOLAAAA"}</h4>
-        <p>${properties.position}</p>
+        <h4>${TeamItem.name || "HOLAAAA"}</h4>
+        <p>${TeamItem.position}</p>
     </div>

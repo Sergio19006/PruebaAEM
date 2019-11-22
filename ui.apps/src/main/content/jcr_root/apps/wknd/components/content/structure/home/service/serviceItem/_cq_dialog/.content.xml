@@ -28,21 +28,10 @@
                             fieldDescription="FIELD_DESCRIPTION"
                             fieldLabel="Select"
                             name="./select">
-                        <items jcr:primaryType="nt:unstructured">
-                            <rocket
-                                    jcr:primaryType="nt:unstructured"
-                                    selected="{Boolean}true"
-                                    text="rocket"
-                                    value="lnr-rocket"/>
-                            <wand
-                                    jcr:primaryType="nt:unstructured"
-                                    text="wand"
-                                    value="lnr-magic-wand"/>
-                            <bug
-                                    jcr:primaryType="nt:unstructured"
-                                    text="bug"
-                                    value="lnr-bug"/>
-                        </items>
+                        <datasource
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="wknd/widgets/datasources/icons"
+                                addNone="{Boolean}true"/>
                     </select>
                 </items>
             </column>
