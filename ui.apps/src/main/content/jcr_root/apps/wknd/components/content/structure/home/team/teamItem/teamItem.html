@@ -1,3 +1,7 @@
+
+<sly data-sly-use.TitleModel="com.adobe.aem.guides.wknd.core.wcm.TitleName"></sly>
+
+
 <div class="thumb">
     <img class="img-fluid" src="${properties.img}" alt="">
     <div class="align-items-center justify-content-center d-flex">
@@ -7,6 +11,6 @@
     </div>
 </div>
     <div class="meta-text mt-30 text-center">
-        <h4>${properties.name || "HOLAAAA"}</h4>
+        <h4>${TitleModel.name || "HOLAAAA"}</h4>
         <p>${properties.position}</p>
     </div>

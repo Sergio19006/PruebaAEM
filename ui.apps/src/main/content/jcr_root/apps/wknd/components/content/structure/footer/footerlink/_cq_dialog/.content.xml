@@ -3,7 +3,8 @@
           xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
           jcr:primaryType="nt:unstructured"
           jcr:title="Properties"
-          sling:resourceType="cq/gui/components/authoring/dialog">
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          extraClientlibs="[wknd.multi]">
     <content
             jcr:primaryType="nt:unstructured"
             sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
@@ -12,11 +13,16 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-                    <title
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                            fieldLabel="Title"
-                            name="./title"/>
+                        <text
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel='Link Text'
+                                name="./text"/>
+                        <link
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldLabel='link value'
+                                name="./link"/>
                 </items>
             </column>
         </items>

@@ -12,15 +12,11 @@
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-                    <text
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                            fieldLabel="Text"
-                            name="./text"/>
                     <multi
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/foundation/form/multifield"
-                            class="multifield-full-width">
+                            class="multifield-full-width"
+                            aem-nested="">
                         <field
                                 jcr:primaryType="nt:unstructured"
                                 sling:resourceType="granite/ui/components/coral/foundation/container">
@@ -29,16 +25,16 @@
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/container">
                                     <items jcr:primaryType="nt:unstructured">
-                                        <label
+                                        <title
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                                name="./label"
-                                                fieldLabel="Label"/>
-                                        <value
+                                                name="./title"
+                                                fieldLabel="Title"/>
+                                        <text
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                                name="./value"
-                                                fieldLabel="Value"/>
+                                                name="./text"
+                                                fieldLabel="Text"/>
                                     </items>
                                 </column>
                             </items>
