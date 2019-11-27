@@ -6,7 +6,7 @@ import org.apache.sling.models.annotations.Optional;
 
 import javax.inject.Inject;
 
-@Model(adaptables= Resource.class)
+@Model(adaptables = Resource.class)
 public class Image {
 
     @Inject @Optional
@@ -15,4 +15,5 @@ public class Image {
     public String getFileReference() {
         return fileReference;
     }
+
 }
