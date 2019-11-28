@@ -6,6 +6,26 @@
         cq:lastModifiedBy="admin"
         jcr:primaryType="nt:unstructured"
         sling:resourceType="wcm/core/components/designer">
+        <home jcr:primaryType="nt:unstructured">
+            <blog jcr:primaryType="nt:unstructured">
+                <blogItem
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/parsys"
+                        components="group:WKND.Content">
+                    <section jcr:primaryType="nt:unstructured"/>
+                </blogItem>
+            </blog>
+            <team jcr:primaryType="nt:unstructured">
+                <teamItem
+                        jcr:lastModified="{Date}2019-11-28T11:02:43.131Z"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wcm/foundation/components/parsys"
+                        components="/apps/wknd/components/content/structure/home/service/serviceItem">
+                    <section jcr:primaryType="nt:unstructured"/>
+                </teamItem>
+            </team>
+        </home>
     </jcr:content>
     <clientlibs/>
 </jcr:root>
