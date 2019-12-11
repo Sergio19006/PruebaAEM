@@ -1,0 +1,9 @@
+
+<template data-sly-template.temp="${ @ breadCumb}">
+    <div data-sly-list.pathItem="${breadCumb.paths}">
+        <a data-sly-test="${pathItem!='wknd' && pathItem!='content' && pathItem!=''}"
+           href="/content/wknd/${[pathItem,'html'] @join='.'}">/${pathItem}</a>
+    </div>
+</template>
+
+

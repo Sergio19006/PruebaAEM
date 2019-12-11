@@ -1,7 +1,6 @@
 
 $(document).ready(function(){
 	"use strict";
-
 	var window_width 	 = $(window).width(),
 	window_height 		 = window.innerHeight,
 	header_height 		 = $(".default-header").height(),
@@ -116,75 +115,14 @@ $(document).ready(function(){
   }
   });
 
-
-    $(".skill1").DonutWidget({
-
-      // these are default options
-      max: 100, 
-      value: 75, 
-      text: "", 
-      rotate: 0, 
-      caption: "", 
-      template: [
-        '<div class="donut-hole"><span class="donut-filling"></div>', 
-        '<div class="donut-bite" data-segment-index="0"></div>', 
-        '<div class="donut-bite" data-segment-index="1"></div>', 
-        '<div class="donut-caption-wrapper"><span class="donut-caption"></span></div>'
-      ].join(''), 
-      colors: {
-        primary: "#8490ff",
-        background: "#eee"
-      },
-      size: "large"
-      
-    });
-
-      $(".skill2").DonutWidget({
-
-        // these are default options
-        max: 100, 
-        value: 95, 
-        text: "", 
-        rotate: 0, 
-        caption: "", 
-        template: [
-          '<div class="donut-hole"><span class="donut-filling"></div>', 
-          '<div class="donut-bite" data-segment-index="0"></div>', 
-          '<div class="donut-bite" data-segment-index="1"></div>', 
-          '<div class="donut-caption-wrapper"><span class="donut-caption"></span></div>'
-        ].join(''), 
-        colors: {
-          primary: "#8490ff",
-          background: "#eee"
-        },
-        size: "large"
-        
-      });
-
-      $(".skill3").DonutWidget({
-
-        // these are default options
-        max: 100, 
-        value: 85, 
-        text: "", 
-        rotate: 0, 
-        caption: "", 
-        template: [
-          '<div class="donut-hole"><span class="donut-filling"></div>', 
-          '<div class="donut-bite" data-segment-index="0"></div>', 
-          '<div class="donut-bite" data-segment-index="1"></div>', 
-          '<div class="donut-caption-wrapper"><span class="donut-caption"></span></div>'
-        ].join(''), 
-        colors: {
-          primary: "#8490ff",
-          background: "#eee"
-        },
-        size: "large"
-        
-      });            
-
       $(document).ready(function() {
+          let url = document.URL.split(/(\d+)/)[0];
+          fetch(url + '4502/bin/migrationResourceTypes')
+            .then(response => response.text())
+                .then(data => {
+                    let json = JSON.parse(data);
+                    console.log(json)
+                })
           $('#mc_embed_signup').find('form').ajaxChimp();
-      });   
-
+      });
  });
