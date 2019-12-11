@@ -9,7 +9,6 @@ import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.Self;
 
 import javax.annotation.PostConstruct;
-
 import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.Iterator;
